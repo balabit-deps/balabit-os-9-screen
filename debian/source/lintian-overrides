@@ -1,0 +1,3 @@
+# False positives (long lines that are clearly no issue)
+screen source: very-long-line-length-in-source-file debian/tests/t/bug-982435-CVE-2021-26937.crash line 1 is 772 characters long (>512)
+screen source: very-long-line-length-in-source-file etc/completer.zsh line 40 is 981 characters long (>512)
