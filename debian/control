@@ -1,7 +1,8 @@
 Source: screen
 Section: misc
 Priority: standard
-Maintainer: Axel Beckert <abe@debian.org>
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Axel Beckert <abe@debian.org>
 Uploaders: Antti Järvinen <antti.jarvinen@katiska.org>
 Standards-Version: 4.6.0
 Build-Depends: debhelper-compat (= 13),

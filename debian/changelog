@@ -1,3 +1,24 @@
+screen (4.9.0-1ubuntu0.1) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: can send privileged SIGHUP signals to any process
+    - debian/patches/CVE-2023-24626.patch: fix missing signal sending
+      permission check on failed query messages in socket.c.
+    - CVE-2023-24626
+  * SECURITY UPDATE: incorrect PTY permissions
+    - debian/patches/CVE-2025-46802.patch: prevent temporary 0666 mode on
+      PTYs in attacher.c, screen.c.
+    - CVE-2025-46802
+  * SECURITY UPDATE: minor information leak
+    - debian/patches/CVE-2025-46804.patch: avoid file existence test
+      information leaks in screen.c, socket.c.
+    - CVE-2025-46804
+  * SECURITY UPDATE: TOCTOU allowing to send SIGHUP, SIGCONT
+    - debian/patches/CVE-2025-46805.patch: don't send signals with root
+      privileges in socket.c.
+    - CVE-2025-46805
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 22 Jan 2026 15:14:32 -0500
+
 screen (4.9.0-1) unstable; urgency=low
 
   * Update debian/upstream/signing-key.asc with upstream PGP keys from

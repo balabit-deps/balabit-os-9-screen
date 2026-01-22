@@ -12,3 +12,7 @@
 80_session_creation_docs.patch
 81_session_creation_util.patch
 82_session_creation_core.patch
+CVE-2023-24626.patch
+CVE-2025-46802.patch
+CVE-2025-46804.patch
+CVE-2025-46805.patch
